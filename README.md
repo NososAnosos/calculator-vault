@@ -2,8 +2,20 @@
 
 A working Android calculator with a hidden, encrypted notepad behind it.
 
-Type your PIN as if it were a calculation and press `=`. Instead of a result,
+Type your PIN on the keypad as a plain number and press `=`. Instead of a result,
 your private notes open. Anyone else just sees a calculator that calculates.
+
+<p align="center">
+  <img src="docs/media/calculator-vault-pin-to-note.gif" width="270"
+       alt="A calculator screen: the PIN 314159 is typed, = is pressed, and a hidden Notes list opens with a note titled You found it.">
+</p>
+
+<p align="center">
+  <img src="docs/media/side-by-side-stock-vs-vault.png" width="560"
+       alt="Two calculators side by side showing 1,234,656 with nearly identical keypads. Left: Pixel calculator (stock). Right: Calculator Vault.">
+  <br>
+  <sub>Left: a screenshot of the stock Pixel calculator, included only for comparison. Right: Calculator Vault.</sub>
+</p>
 
 This is **v1**: a small, early release, shared while it's being built in public.
 It is not on the Play Store yet. You install it by sideloading the APK.
