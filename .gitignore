@@ -1,0 +1,26 @@
+# Gradle / build
+.gradle/
+build/
+.kotlin/
+captures/
+*.apk
+*.aab
+*.idsig
+output-metadata.json
+
+# Local machine config
+local.properties
+
+# Signing material: never commit
+*.jks
+*.keystore
+*.p12
+keystore.properties
+signing.env
+*.env
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store

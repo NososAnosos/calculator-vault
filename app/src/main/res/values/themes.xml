@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window background matches the captured dark display so there is no flash on launch. -->
+    <style name="Theme.CalculatorVault" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/calc_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <color name="calc_background">#FF0E0E13</color>
+</resources>
