@@ -59,6 +59,33 @@ Requires Android 12L (API 32) or newer.
 
 Or with `adb`: `adb install calculator-vault-v1.0.apk`
 
+## Hide the stock calculator
+
+Two calculator apps on one phone is a giveaway. After you install Calculator
+Vault, hide the phone's original calculator. Menu names vary by phone and
+Android version, so look for the closest match.
+
+**Easiest, no computer needed:** open **Settings > Apps > See all apps >
+Calculator** (the original one) and tap **Disable**. On a Pixel the stock
+calculator is a system app, so it can't be uninstalled normally. Disabling it
+hides it and stops it from running.
+
+**With `adb`** (Pixel shown; other phones use a different package name, which
+`adb shell pm list packages | grep -i calc` will show):
+
+```sh
+adb shell pm disable-user --user 0 com.google.android.calculator
+```
+
+On a Pixel, `pm uninstall --user 0` is refused for this system app without root
+("only root can delete system app for a particular user"), so `disable-user` is
+the way to go.
+
+**To undo:** re-enable it from the same Settings screen, or run
+`adb shell pm enable com.google.android.calculator`.
+
+Tip: drag Calculator Vault to the spot where the old calculator icon used to be.
+
 ## Verify the download
 
 Every release lists the APK's SHA-256 hash. All releases are signed with the
